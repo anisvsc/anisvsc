@@ -22,4 +22,4 @@ jobs:
         env:
           WAKATIMETOKEN: ${{ secrets.WAKATIMETOKEN }}
           DISCORDTOKEN: ${{ secrets.DISCORDTOKEN }}
-          GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
+          GITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
