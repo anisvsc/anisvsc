@@ -18,7 +18,7 @@ $ ls anisvsc
 │
 ├── Languages
 │   ├── HTML        CSS         TypeScript      NodeJS
-│   └── PHP         C           C++             Python
+│   └── C           C++         Python
 │
 ├── Frameworks
 │   └── NextJs      React       TailwindCSS     Vite
@@ -26,9 +26,9 @@ $ ls anisvsc
 ├── Tools
 │   ├── VSCode      Cursor      Httpie          Docker
 │   ├── Git         GitHub      Vercel          Postman
-│   └── TLDraw      Figma       Discord         Visual Studio
+│   └── TLDraw      Figma       Discord
 │
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/anisvsc/anisvsc/main/update.js) automatically every 2 hours, most recently on 17/05/2025, 14:21:44 ( UTC±2 )
+###### This presentation is [updated](https://github.com/anisvsc/anisvsc) automatically every 2 hours, most recently on 17/05/2025, 14:35:15 ( UTC±2 )
