@@ -11,8 +11,10 @@ $ curl -s https://raw.githubusercontent.com/anisvsc/anisvsc/master/hello.sh | sh
 
 $ waka stats --user anisvsc --from 2025-05-17 --to 2025-05-24
 
-       HTML  │  88.38%  ██████████████████    0 hr  2 mins
-    ~ Total ─┴─────────────────────────────> 2 mins
+ JavaScript  │  59.49%  ████████████          2 hrs 29 mins
+        CSS  │  26.02%  █████                 1 hr  05 mins
+       HTML  │  14.49%  ███                   0 hr  36 mins
+    ~ Total ─┴─────────────────────────────> 4 hrs 11 mins
 
 $ ls anisvsc
 ├── README.md
@@ -32,4 +34,4 @@ $ ls anisvsc
 └── Databases
     └── MySQL       SQLite      MongoDB         Redis
 ```
-###### This presentation is [updated](https://github.com/anisvsc/anisvsc) automatically every 2 hours, most recently on 24/05/2025, 20:21:41 ( UTC±2 )
+###### This presentation is [updated](https://github.com/anisvsc/anisvsc) automatically every 2 hours, most recently on 24/05/2025, 22:19:03 ( UTC±2 )
