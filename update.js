@@ -22,92 +22,92 @@ void (async function main() {
     "├── Born on 2005.02.05",
     "└── Joined Github on 2017.02.17",
     "",
-    `$ waka stats --user anisvsc --from ${
-      new Date(Date.now() - 604800000)
-        .toISOString()
-        .split("T")[0]
-    } --to ${
-      new Date().toISOString().split("T")[0]
-    }`,
-    "",
-  ];
+  //   `$ waka stats --user anisvsc --from ${
+  //     new Date(Date.now() - 604800000)
+  //       .toISOString()
+  //       .split("T")[0]
+  //   } --to ${
+  //     new Date().toISOString().split("T")[0]
+  //   }`,
+  //   "",
+  // ];
 
-  let maxLangNameLength = 7;
+  // let maxLangNameLength = 7;
 
-  wakaData.data.languages.length = 7;
+  // wakaData.data.languages.length = 7;
 
-  for (const lang of wakaData.data.languages)
-    if (
-      lang &&
-      lang.name.length > maxLangNameLength
-    )
-      maxLangNameLength = lang.name.length;
+  // for (const lang of wakaData.data.languages)
+  //   if (
+  //     lang &&
+  //     lang.name.length > maxLangNameLength
+  //   )
+  //     maxLangNameLength = lang.name.length;
 
-  // If we have hour > 10, we need to add 1 to the max length to avoid the hour to be on the same line as the name
-  const hourPrefixed =
-    wakaData.data.languages.some(
-      (lang) => lang.hours >= 10
-    );
-  const minsPrefixed =
-    wakaData.data.languages.some(
-      (lang) => lang.minutes >= 10
-    );
+  // // If we have hour > 10, we need to add 1 to the max length to avoid the hour to be on the same line as the name
+  // const hourPrefixed =
+  //   wakaData.data.languages.some(
+  //     (lang) => lang.hours >= 10
+  //   );
+  // const minsPrefixed =
+  //   wakaData.data.languages.some(
+  //     (lang) => lang.minutes >= 10
+  //   );
 
-  for (const language of wakaData.data
-    .languages) {
-    if (!language) continue;
+  // for (const language of wakaData.data
+  //   .languages) {
+  //   if (!language) continue;
 
-    // ── Skip if language is not used more than 1 minute
-    if (language.total_seconds < 60) continue;
+  //   // ── Skip if language is not used more than 1 minute
+  //   if (language.total_seconds < 60) continue;
 
-    const name = language.name.padStart(
-      maxLangNameLength + 1,
-      " "
-    );
-    const percentage = language.percent
-      .toString()
-      .padEnd(4, 0)
-      .padStart(5, " ");
-    const loadbar = "█"
-      .repeat(Math.round(language.percent / 5))
-      .padEnd(18, " ");
-    const time = `${
-      (hourPrefixed && language.hours) < 10
-        ? " "
-        : ""
-    }${language.hours} hr${
-      language.hours > 1 ? "s" : " "
-    } ${
-      minsPrefixed && language.minutes < 10
-        ? 0
-        : ""
-    }${language.minutes} min${
-      language.minutes > 1 ? "s" : " "
-    }`;
+  //   const name = language.name.padStart(
+  //     maxLangNameLength + 1,
+  //     " "
+  //   );
+  //   const percentage = language.percent
+  //     .toString()
+  //     .padEnd(4, 0)
+  //     .padStart(5, " ");
+  //   const loadbar = "█"
+  //     .repeat(Math.round(language.percent / 5))
+  //     .padEnd(18, " ");
+  //   const time = `${
+  //     (hourPrefixed && language.hours) < 10
+  //       ? " "
+  //       : ""
+  //   }${language.hours} hr${
+  //     language.hours > 1 ? "s" : " "
+  //   } ${
+  //     minsPrefixed && language.minutes < 10
+  //       ? 0
+  //       : ""
+  //   }${language.minutes} min${
+  //     language.minutes > 1 ? "s" : " "
+  //   }`;
 
-    output.push(
-      `${name}  │  ${percentage}%  ${loadbar}   ${time}`
-    );
-  }
+  //   output.push(
+  //     `${name}  │  ${percentage}%  ${loadbar}   ${time}`
+  //   );
+  // }
 
-  const lastUpdate =
-    new Date().toLocaleDateString("fr-FR", {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    });
+  // const lastUpdate =
+  //   new Date().toLocaleDateString("fr-FR", {
+  //     year: "numeric",
+  //     month: "numeric",
+  //     day: "numeric",
+  //     hour: "2-digit",
+  //     minute: "2-digit",
+  //     second: "2-digit",
+  //   });
 
-  output.push(
-    "~ Total ".padStart(
-      maxLangNameLength + 2,
-      " "
-    ) +
-      "─┴─────────────────────────────> " +
-      wakaData.data.human_readable_total,
-    "",
+  // output.push(
+  //   "~ Total ".padStart(
+  //     maxLangNameLength + 2,
+  //     " "
+  //   ) +
+  //     "─┴─────────────────────────────> " +
+  //     wakaData.data.human_readable_total,
+  //   "",
     "$ ls anisvsc",
     "├── README.md",
     "│",
